@@ -1,0 +1,174 @@
+{
+    "id": "618f5171fc39d2670b7b6e00",
+    "aaId": "618f516cf1ff560069f34519",
+    "activityBlocked": false,
+    "avatarHash": "6eda7e5279d8ae04594ee75578e605c8",
+    "avatarUrl": "https://trello-members.s3.amazonaws.com/618f5171fc39d2670b7b6e00/6eda7e5279d8ae04594ee75578e605c8",
+    "bio": "",
+    "bioData": null,
+    "confirmed": true,
+    "fullName": "katreen nashaat",
+    "idEnterprise": null,
+    "idEnterprisesDeactivated": [],
+    "idMemberReferrer": null,
+    "idPremOrgsAdmin": [],
+    "initials": "KN",
+    "memberType": "normal",
+    "nonPublic": {},
+    "nonPublicAvailable": true,
+    "products": [],
+    "url": "https://trello.com/katreennashaat",
+    "username": "katreennashaat",
+    "status": "disconnected",
+    "aaBlockSyncUntil": null,
+    "aaEmail": null,
+    "aaEnrolledDate": null,
+    "avatarSource": "none",
+    "credentialsRemovedCount": 0,
+    "domainClaimed": null,
+    "email": "katreen.nashaat@yahoo.com",
+    "goldSunsetFreeTrialIdOrganization": null,
+    "gravatarHash": "897779dc02758d7db1fc19166778c411",
+    "idBoards": [
+        "618f527f1b8ea303a5d9c57a",
+        "619f2c785498de47dd95d95d",
+        "619f2d72de0b9a3b7425a297",
+        "619f2d9aefb9865e93b73efe",
+        "619f2e91c78c404f9d95b5f6",
+        "619f2e9f4b46b84fd8e89591",
+        "61a1ce4f69260e4c02125f5d",
+        "633fe35879ac610190c382b8",
+        "634106b3aa1d6900efc0ec5c"
+    ],
+    "idOrganizations": [
+        "618f5183922b1f741c79e14d"
+    ],
+    "idEnterprisesAdmin": [],
+    "limits": {
+        "boards": {
+            "totalPerMember": {
+                "status": "ok",
+                "disableAt": 4500,
+                "warnAt": 3600
+            }
+        },
+        "orgs": {
+            "totalPerMember": {
+                "status": "ok",
+                "disableAt": 850,
+                "warnAt": 680
+            }
+        }
+    },
+    "loginTypes": [
+        "atlassian"
+    ],
+    "marketingOptIn": {
+        "optedIn": true,
+        "date": "2021-11-13T05:49:00.318Z"
+    },
+    "messagesDismissed": [
+        {
+            "_id": "618f51d547a1d8573f9ed8fa",
+            "name": "team-join-cta-banner-618f5183922b1f741c79e14d",
+            "count": 1,
+            "lastDismissed": "2021-11-13T05:49:09.557Z"
+        }
+    ],
+    "oneTimeMessagesDismissed": [
+        "sent-possible-new-signup-event",
+        "workspace-nav-enabled",
+        "workspace-nav-spotlight",
+        "close-menu-of-first-board",
+        "team-template-picker-618f5183922b1f741c79e14d"
+    ],
+    "prefs": {
+        "privacy": {
+            "fullName": "public",
+            "avatar": "public"
+        },
+        "sendSummaries": true,
+        "minutesBetweenSummaries": 60,
+        "minutesBeforeDeadlineToNotify": 1440,
+        "colorBlind": false,
+        "locale": "en-US"
+    },
+    "trophies": [],
+    "uploadedAvatarHash": null,
+    "uploadedAvatarUrl": null,
+    "premiumFeatures": [
+        "additionalBoardBackgrounds",
+        "additionalStickers",
+        "customBoardBackgrounds",
+        "customEmoji",
+        "customStickers",
+        "plugins"
+    ],
+    "isAaMastered": true,
+    "ixUpdate": "61",
+    "boards": [
+        {
+            "id": "633fe35879ac610190c382b8",
+            "name": "fwd1",
+            "closed": false,
+            "idOrganization": "618f5183922b1f741c79e14d",
+            "pinned": false
+        },
+        {
+            "id": "634106b3aa1d6900efc0ec5c",
+            "name": "fwd1",
+            "closed": false,
+            "idOrganization": "618f5183922b1f741c79e14d",
+            "pinned": false
+        },
+        {
+            "id": "619f2d9aefb9865e93b73efe",
+            "name": "no list",
+            "closed": false,
+            "idOrganization": "618f5183922b1f741c79e14d",
+            "pinned": false
+        },
+        {
+            "id": "619f2e91c78c404f9d95b5f6",
+            "name": "no list",
+            "closed": false,
+            "idOrganization": "618f5183922b1f741c79e14d",
+            "pinned": false
+        },
+        {
+            "id": "619f2e9f4b46b84fd8e89591",
+            "name": "no list",
+            "closed": false,
+            "idOrganization": "618f5183922b1f741c79e14d",
+            "pinned": false
+        },
+        {
+            "id": "61a1ce4f69260e4c02125f5d",
+            "name": "no list",
+            "closed": false,
+            "idOrganization": "618f5183922b1f741c79e14d",
+            "pinned": false
+        },
+        {
+            "id": "619f2c785498de47dd95d95d",
+            "name": "no list ",
+            "closed": false,
+            "idOrganization": "618f5183922b1f741c79e14d",
+            "pinned": false
+        },
+        {
+            "id": "619f2d72de0b9a3b7425a297",
+            "name": "no list ",
+            "closed": false,
+            "idOrganization": "618f5183922b1f741c79e14d",
+            "pinned": false
+        },
+        {
+            "id": "618f527f1b8ea303a5d9c57a",
+            "name": "test api",
+            "closed": false,
+            "idOrganization": "618f5183922b1f741c79e14d",
+            "pinned": false
+        }
+    ]
+}

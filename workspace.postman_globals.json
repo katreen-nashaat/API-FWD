@@ -1,0 +1,56 @@
+{
+	"id": "4cf42708-0a78-44c8-87f4-e9c526dbcacd",
+	"values": [
+		{
+			"key": "key",
+			"value": "e2b82f318e69a6dfcf3b8bff05c92fe6",
+			"enabled": true
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "idboard",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "firstboard id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "last board id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "listid",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "firslistid",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "lastlistid",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2022-10-09T03:49:42.611Z",
+	"_postman_exported_using": "Postman/9.31.21-221006-1155"
+}

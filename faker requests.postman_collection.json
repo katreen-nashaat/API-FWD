@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "867b33f9-8e33-48be-821e-522137e471f3",
+		"name": "faker requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18328837"
+	},
+	"item": [
+		{
+			"name": "Get authors",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.have(\"id\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Authors",
+					"protocol": "https",
+					"host": [
+						"fakerestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Author",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"    pm.test(\"Register a new valid Author successfully and response code 201 Created\", function () {\r",
+							"        pm.response.to.have.status(200);\r",
+							"    });\r",
+							"        pm.test(\"firstname & lastname should be mandatory\", function () {\r",
+							"            if(pm.response.json().firstName==\"\"||pm.response.json().lastName==\"\")\r",
+							"            {\r",
+							"        pm.response.to.have.status(400);\r",
+							"            }\r",
+							"    });\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 500,\r\n  \"idBook\": 100,\r\n  \"firstName\": \"Ali\",\r\n  \"lastName\": \"Ahmed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Authors",
+					"protocol": "https",
+					"host": [
+						"fakerestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get author by book id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Searching with valid idBook should return relative data in response body\",function()\r",
+							"{ \r",
+							"    for(var i=0;i<pm.response.json.length;i++)\r",
+							"{\r",
+							"    pm.expect(pm.response.json()[i].idBook).to.equal(1);\r",
+							"   \r",
+							"   \r",
+							"}\r",
+							"\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/1",
+					"protocol": "https",
+					"host": [
+						"fakerestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Authors",
+						"authors",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit author",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Author's data is updated successfully\",function(){\r",
+							" pm.expect(pm.response.json().idBook).to.equal(400);\r",
+							" pm.expect(pm.response.json().id).to.equal(5);\r",
+							" pm.expect(pm.response.json().firstName).to.equal(\"mazen\");\r",
+							" pm.expect(pm.response.json().lastName).to.equal(\"mohamed\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 5,\r\n  \"idBook\": 400,\r\n  \"firstName\": \"mazen\",\r\n  \"lastName\": \"mohamed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Authors/5",
+					"protocol": "https",
+					"host": [
+						"fakerestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Authors",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get author edited",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
